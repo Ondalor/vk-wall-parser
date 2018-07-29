@@ -17,7 +17,10 @@
 		3081A7CF210DFBBB00B8976B /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7CE210DFBBB00B8976B /* ViewFactory.swift */; };
 		3081A7D1210DFC0C00B8976B /* WallParseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */; };
 		3081A7D4210DFC8D00B8976B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7D3210DFC8D00B8976B /* UIViewController.swift */; };
+		30906295210E49C000A3CFEB /* VKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30906294210E49C000A3CFEB /* VKError.swift */; };
+		30906297210E573400A3CFEB /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30906296210E573400A3CFEB /* SearchType.swift */; };
 		30EF1EC3210E054800AAE560 /* VK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF1EC2210E054800AAE560 /* VK.swift */; };
+		30EF1EC5210E166500AAE560 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF1EC4210E166500AAE560 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,10 @@
 		3081A7CE210DFBBB00B8976B /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallParseViewController.storyboard; sourceTree = "<group>"; };
 		3081A7D3210DFC8D00B8976B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		30906294210E49C000A3CFEB /* VKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKError.swift; sourceTree = "<group>"; };
+		30906296210E573400A3CFEB /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		30EF1EC2210E054800AAE560 /* VK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK.swift; sourceTree = "<group>"; };
+		30EF1EC4210E166500AAE560 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D2FF50F42F0F602BAE07F1D0 /* Pods-VK Wall Parser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Wall Parser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser.debug.xcconfig"; sourceTree = "<group>"; };
 		D9410C033F581E97DB673067 /* Pods-VK Wall Parser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Wall Parser.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3081A7C4210DFA2B00B8976B /* Scenes */,
+				30906293210E49A800A3CFEB /* Models */,
 				30EF1EC0210E046700AAE560 /* Network */,
 				3081A7D2210DFC7400B8976B /* Extensions */,
 				3081A7B2210DFA0000B8976B /* AppDelegate.swift */,
@@ -97,6 +104,7 @@
 				3081A7C8210DFA5600B8976B /* WallParseProtocols.swift */,
 				3081A7C7210DFA4900B8976B /* Presenter */,
 				3081A7C6210DFA4600B8976B /* View */,
+				30906296210E573400A3CFEB /* SearchType.swift */,
 			);
 			path = WallParseScene;
 			sourceTree = "<group>";
@@ -124,6 +132,15 @@
 				3081A7D3210DFC8D00B8976B /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30906293210E49A800A3CFEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30EF1EC4210E166500AAE560 /* Post.swift */,
+				30906294210E49C000A3CFEB /* VKError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		30EF1EC0210E046700AAE560 /* Network */ = {
@@ -270,9 +287,12 @@
 				3081A7D4210DFC8D00B8976B /* UIViewController.swift in Sources */,
 				30EF1EC3210E054800AAE560 /* VK.swift in Sources */,
 				3081A7C9210DFA5600B8976B /* WallParseProtocols.swift in Sources */,
+				30EF1EC5210E166500AAE560 /* Post.swift in Sources */,
 				3081A7CF210DFBBB00B8976B /* ViewFactory.swift in Sources */,
 				3081A7CB210DFB0F00B8976B /* WallParseViewController.swift in Sources */,
 				3081A7B3210DFA0000B8976B /* AppDelegate.swift in Sources */,
+				30906297210E573400A3CFEB /* SearchType.swift in Sources */,
+				30906295210E49C000A3CFEB /* VKError.swift in Sources */,
 				3081A7CD210DFB2E00B8976B /* WallParsePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,11 @@
 import Foundation
 
 protocol WallParsePresenterProtocol: class {
-    
+    func search(for id: String, type: SearchType)
 }
 protocol WallParseViewProtocol: class {
-    
+    func showPosts(postsData: [PostData])
+    func showError(withMessage errorMessage: String)
 }
 
 

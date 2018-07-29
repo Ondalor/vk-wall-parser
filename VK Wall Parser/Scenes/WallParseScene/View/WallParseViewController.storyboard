@@ -17,11 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="Lsz-ga-wbx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ylC-Fa-2Pp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="eRi-p3-oXr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="JOo-bj-wBV" id="ycT-it-vR8"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostDataCell" id="HiQ-to-FhC">
+                                        <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HiQ-to-FhC" id="jVf-Ms-nv2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JOo-bj-wBV" id="dGA-yb-rZi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ylC-Fa-2Pp" firstAttribute="top" secondItem="rH9-5J-IOy" secondAttribute="top" id="dix-Bx-Og7"/>
+                            <constraint firstItem="rH9-5J-IOy" firstAttribute="bottom" secondItem="ylC-Fa-2Pp" secondAttribute="bottom" id="gme-gh-K4M"/>
+                            <constraint firstItem="rH9-5J-IOy" firstAttribute="trailing" secondItem="ylC-Fa-2Pp" secondAttribute="trailing" id="u0b-vH-izG"/>
+                            <constraint firstItem="ylC-Fa-2Pp" firstAttribute="leading" secondItem="rH9-5J-IOy" secondAttribute="leading" id="xhu-qV-ZoO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rH9-5J-IOy"/>
                     </view>
+                    <connections>
+                        <outlet property="postsTableView" destination="ylC-Fa-2Pp" id="5lM-a9-bwK"/>
+                        <outlet property="searchBar" destination="eRi-p3-oXr" id="GZ0-c7-wIC"/>
+                        <outlet property="searchDisplayController" destination="xwO-hj-UGA" id="7hm-t2-1n4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcE-Tl-TSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ihI-id-ZWU">
+                    <connections>
+                        <outlet property="delegate" destination="JOo-bj-wBV" id="gxs-E9-3UD"/>
+                        <outlet property="searchContentsController" destination="JOo-bj-wBV" id="2PM-FD-8c9"/>
+                        <outlet property="searchResultsDataSource" destination="JOo-bj-wBV" id="zQY-n1-2dq"/>
+                        <outlet property="searchResultsDelegate" destination="JOo-bj-wBV" id="GhA-Yf-KhQ"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="xwO-hj-UGA">
+                    <connections>
+                        <outlet property="delegate" destination="JOo-bj-wBV" id="ggp-z5-Q6D"/>
+                        <outlet property="searchContentsController" destination="JOo-bj-wBV" id="k5e-Ht-Vub"/>
+                        <outlet property="searchResultsDataSource" destination="JOo-bj-wBV" id="d1k-kT-GQ1"/>
+                        <outlet property="searchResultsDelegate" destination="JOo-bj-wBV" id="W9l-5C-th2"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-1050" y="-364"/>
         </scene>
