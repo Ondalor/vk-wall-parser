@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3FF089E4DA5B3FECE69B8C /* Pods_VK_Wall_Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB4BD2D8FBF02E3681F9881 /* Pods_VK_Wall_Parser.framework */; };
 		3081A7B3210DFA0000B8976B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7B2210DFA0000B8976B /* AppDelegate.swift */; };
 		3081A7BA210DFA0200B8976B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7B9210DFA0200B8976B /* Assets.xcassets */; };
 		3081A7BD210DFA0200B8976B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7BB210DFA0200B8976B /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BB4BD2D8FBF02E3681F9881 /* Pods_VK_Wall_Parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Wall_Parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081A7AF210DFA0000B8976B /* VK Wall Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Wall Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081A7B2210DFA0000B8976B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3081A7B9210DFA0200B8976B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		3081A7CE210DFBBB00B8976B /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallParseViewController.storyboard; sourceTree = "<group>"; };
 		3081A7D3210DFC8D00B8976B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D2FF50F42F0F602BAE07F1D0 /* Pods-VK Wall Parser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Wall Parser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser.debug.xcconfig"; sourceTree = "<group>"; };
+		D9410C033F581E97DB673067 /* Pods-VK Wall Parser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Wall Parser.release.xcconfig"; path = "Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3FF089E4DA5B3FECE69B8C /* Pods_VK_Wall_Parser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				3081A7B1210DFA0000B8976B /* VK Wall Parser */,
 				3081A7B0210DFA0000B8976B /* Products */,
+				5A27ED246FD125FD3924BACE /* Pods */,
+				75D626F544C2183ABCDFEBD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +123,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5A27ED246FD125FD3924BACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF50F42F0F602BAE07F1D0 /* Pods-VK Wall Parser.debug.xcconfig */,
+				D9410C033F581E97DB673067 /* Pods-VK Wall Parser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75D626F544C2183ABCDFEBD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB4BD2D8FBF02E3681F9881 /* Pods_VK_Wall_Parser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3081A7C1210DFA0200B8976B /* Build configuration list for PBXNativeTarget "VK Wall Parser" */;
 			buildPhases = (
+				BF01714351CC09BD5CBDF971 /* [CP] Check Pods Manifest.lock */,
 				3081A7AB210DFA0000B8976B /* Sources */,
 				3081A7AC210DFA0000B8976B /* Frameworks */,
 				3081A7AD210DFA0000B8976B /* Resources */,
+				195C8952F5118A450B8888DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +207,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		195C8952F5118A450B8888DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VK Wall Parser/Pods-VK Wall Parser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF01714351CC09BD5CBDF971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VK Wall Parser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3081A7AB210DFA0000B8976B /* Sources */ = {
@@ -326,6 +395,7 @@
 		};
 		3081A7C2210DFA0200B8976B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FF50F42F0F602BAE07F1D0 /* Pods-VK Wall Parser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -345,6 +415,7 @@
 		};
 		3081A7C3210DFA0200B8976B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9410C033F581E97DB673067 /* Pods-VK Wall Parser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
