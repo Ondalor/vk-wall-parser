@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3081A7B3210DFA0000B8976B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7B2210DFA0000B8976B /* AppDelegate.swift */; };
-		3081A7B5210DFA0000B8976B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7B4210DFA0000B8976B /* ViewController.swift */; };
-		3081A7B8210DFA0000B8976B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7B6210DFA0000B8976B /* Main.storyboard */; };
 		3081A7BA210DFA0200B8976B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7B9210DFA0200B8976B /* Assets.xcassets */; };
 		3081A7BD210DFA0200B8976B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7BB210DFA0200B8976B /* LaunchScreen.storyboard */; };
+		3081A7C9210DFA5600B8976B /* WallParseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7C8210DFA5600B8976B /* WallParseProtocols.swift */; };
+		3081A7CB210DFB0F00B8976B /* WallParseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7CA210DFB0F00B8976B /* WallParseViewController.swift */; };
+		3081A7CD210DFB2E00B8976B /* WallParsePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7CC210DFB2E00B8976B /* WallParsePresenter.swift */; };
+		3081A7CF210DFBBB00B8976B /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7CE210DFBBB00B8976B /* ViewFactory.swift */; };
+		3081A7D1210DFC0C00B8976B /* WallParseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */; };
+		3081A7D4210DFC8D00B8976B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081A7D3210DFC8D00B8976B /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3081A7AF210DFA0000B8976B /* VK Wall Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Wall Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081A7B2210DFA0000B8976B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3081A7B4210DFA0000B8976B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3081A7B7210DFA0000B8976B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3081A7B9210DFA0200B8976B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3081A7BC210DFA0200B8976B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3081A7BE210DFA0200B8976B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3081A7C8210DFA5600B8976B /* WallParseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallParseProtocols.swift; sourceTree = "<group>"; };
+		3081A7CA210DFB0F00B8976B /* WallParseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallParseViewController.swift; sourceTree = "<group>"; };
+		3081A7CC210DFB2E00B8976B /* WallParsePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallParsePresenter.swift; sourceTree = "<group>"; };
+		3081A7CE210DFBBB00B8976B /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WallParseViewController.storyboard; sourceTree = "<group>"; };
+		3081A7D3210DFC8D00B8976B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		3081A7B1210DFA0000B8976B /* VK Wall Parser */ = {
 			isa = PBXGroup;
 			children = (
+				3081A7D2210DFC7400B8976B /* Extensions */,
+				3081A7C4210DFA2B00B8976B /* Scenes */,
 				3081A7B2210DFA0000B8976B /* AppDelegate.swift */,
-				3081A7B4210DFA0000B8976B /* ViewController.swift */,
-				3081A7B6210DFA0000B8976B /* Main.storyboard */,
+				3081A7CE210DFBBB00B8976B /* ViewFactory.swift */,
 				3081A7B9210DFA0200B8976B /* Assets.xcassets */,
 				3081A7BB210DFA0200B8976B /* LaunchScreen.storyboard */,
 				3081A7BE210DFA0200B8976B /* Info.plist */,
 			);
 			path = "VK Wall Parser";
+			sourceTree = "<group>";
+		};
+		3081A7C4210DFA2B00B8976B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3081A7C5210DFA3B00B8976B /* WallParseScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3081A7C5210DFA3B00B8976B /* WallParseScene */ = {
+			isa = PBXGroup;
+			children = (
+				3081A7C8210DFA5600B8976B /* WallParseProtocols.swift */,
+				3081A7C7210DFA4900B8976B /* Presenter */,
+				3081A7C6210DFA4600B8976B /* View */,
+			);
+			path = WallParseScene;
+			sourceTree = "<group>";
+		};
+		3081A7C6210DFA4600B8976B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3081A7CA210DFB0F00B8976B /* WallParseViewController.swift */,
+				3081A7D0210DFC0C00B8976B /* WallParseViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3081A7C7210DFA4900B8976B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3081A7CC210DFB2E00B8976B /* WallParsePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3081A7D2210DFC7400B8976B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3081A7D3210DFC8D00B8976B /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +176,7 @@
 			files = (
 				3081A7BD210DFA0200B8976B /* LaunchScreen.storyboard in Resources */,
 				3081A7BA210DFA0200B8976B /* Assets.xcassets in Resources */,
-				3081A7B8210DFA0000B8976B /* Main.storyboard in Resources */,
+				3081A7D1210DFC0C00B8976B /* WallParseViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +187,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3081A7B5210DFA0000B8976B /* ViewController.swift in Sources */,
+				3081A7D4210DFC8D00B8976B /* UIViewController.swift in Sources */,
+				3081A7C9210DFA5600B8976B /* WallParseProtocols.swift in Sources */,
+				3081A7CF210DFBBB00B8976B /* ViewFactory.swift in Sources */,
+				3081A7CB210DFB0F00B8976B /* WallParseViewController.swift in Sources */,
 				3081A7B3210DFA0000B8976B /* AppDelegate.swift in Sources */,
+				3081A7CD210DFB2E00B8976B /* WallParsePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3081A7B6210DFA0000B8976B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3081A7B7210DFA0000B8976B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3081A7BB210DFA0200B8976B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,7 +328,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "VK Wall Parser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +337,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "by.no.VK-Wall-Parser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +347,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "VK Wall Parser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +356,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "by.no.VK-Wall-Parser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
